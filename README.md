@@ -1,7 +1,7 @@
 # Joystick Android App
 
 ## 🔎 Overview
-The project displays a joystick via android app so the user can control the airplain and flight it with the Flight-Gear program witch simulate real aircraft.
+This project displays a joystick via android app so the user can control the airplain and flight it with the Flight-Gear simulator app.
 
 ## :art: Design architecture
 The project was designed with MVVM architecture and written with Java.
@@ -19,3 +19,12 @@ $insert picture of UML$
 
 3. Run the FlightGear and click on 'Autostart'
 4. use Android Studio / Intelij / other IDE that supports andriod development
+
+🎥 Demo video
+
+**insert youtube url**
+
+:two_men_holding_hands: Owners
+
+1. Itamar Fisch
+2. Neriya Fisch
