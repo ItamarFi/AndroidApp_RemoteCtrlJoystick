@@ -6,7 +6,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/background">
 
     <EditText
             android:id="@+id/port"
@@ -38,8 +39,7 @@
             app:layout_constraintTop_toBottomOf="@id/ip"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"/>
-
+            android:layout_marginTop="8dp"/>
     <com.example.androidapp_remotectrljoystick.JoystickView
             android:layout_width="230dp"
             android:layout_height="230dp"
@@ -47,8 +47,9 @@
             android:layout_weight="1"
             app:layout_constraintTop_toBottomOf="@id/connect"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="10dp"
-            />
+            android:layout_marginLeft="128dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginStart="128dp"/>
     <SeekBar
             android:id="@+id/throttleBar"
             android:layout_width="230dp"
@@ -57,19 +58,20 @@
             android:max="100"
             android:min="0"
             android:progress="0"
-            app:layout_constraintTop_toBottomOf="@id/connect"
-            app:layout_constraintLeft_toRightOf="@id/joystick"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginRight="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp" app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintVertical_bias="0.205"/>
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="204dp"
+            android:layout_marginRight="204dp"
+            app:layout_constraintVertical_bias="0.499"
+            android:background="@color/colorPrimaryDark"
+    />
+
     <SeekBar
             android:id="@+id/rudderBar"
             android:layout_width="200dp"
+            android:min="0"
+            android:max="200"
             android:progress="100"
             android:layout_height="20dp"
             app:layout_constraintTop_toBottomOf="@id/joystick"
@@ -79,6 +81,10 @@
             android:layout_marginRight="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"/>
+            android:layout_marginStart="10dp" app:layout_constraintHorizontal_bias="0.691"
+            app:layout_constraintVertical_bias="0.118"
+            android:background="@color/colorPrimaryDark"
+            android:progressDrawable="@color/colorPrimaryDark"
+    />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
