@@ -6,7 +6,7 @@ This project displays a joystick via android app so the user can control the air
 ## :art: Design architecture
 The project was designed with MVVM architecture and written with Java.
 
-$insert picture of UML$
+![UML](https://user-images.githubusercontent.com/72417568/123006444-50571d00-d3c0-11eb-819e-3c189cf40cba.png)
 
 ## 🔧 Requirements and installations
 1. Download & install FlightGear v2020.3.6. :airplane:
