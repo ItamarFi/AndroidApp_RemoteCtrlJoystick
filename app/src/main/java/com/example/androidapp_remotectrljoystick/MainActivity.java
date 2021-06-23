@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements JoystickView.Joys
         rudderBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                float rudder = ((float) progress - 50) / 50;
+                float rudder = ((float) progress - 100) / 100;
                 viewModel.setRudder(rudder);
             }
 
@@ -93,8 +93,6 @@ public class MainActivity extends AppCompatActivity implements JoystickView.Joys
             // change to "connected"
             isConnected=true;
             connectButton.setText("Connected");
-            LightingColorFilter darken = new LightingColorFilter(1, 0x000000);
-            connectButton.getBackground().setColorFilter(darken);
         } catch (IOException e) {
             e.printStackTrace();
             // notify failure
