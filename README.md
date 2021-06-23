@@ -20,9 +20,9 @@ The project was designed with MVVM architecture and written with Java.
 3. Run the FlightGear and click on 'Autostart'
 4. use Android Studio / Intelij / other IDE that supports andriod development
 
-🎥 Demo video
+🎥 Demo video (Hebrew)
 
-**insert youtube url**
+https://www.youtube.com/watch?v=QxlY40Tmj8g
 
 :two_men_holding_hands: Owners
 
